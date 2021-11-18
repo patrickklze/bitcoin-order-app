@@ -18,6 +18,7 @@ before_script:
   - npm install -g @angular/cli
 
 script:
+  - export NODE_OPTIONS=--openssl-legacy-provider
   - ng build --configuration production --base-href https://patrickklze.github.io/bitcoin-order-app/
 
 deploy:
