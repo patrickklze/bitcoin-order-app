@@ -16,6 +16,7 @@ branches:
    - development
 before_script:
   - npm install -g @angular/cli
+  - npm update
 
 script:
   - ng build --configuration=production --base-href https://patrickklze.github.io/bitcoin-order-app/
